@@ -11,7 +11,7 @@ struct TripPlanCard: View {
     var alarmState: () -> Void
     var tripPlan: TripPlan
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 16) {
             Text("Trip Plan")
                 .font(.headline)
             
@@ -52,7 +52,7 @@ struct TripPlanCard: View {
             if(tripPlan.status != "Search"){
                 Divider()
                 
-                HStack(alignment: .center) {
+                HStack(alignment: .center, spacing: 16) {
                     Text("You will be alarmed 1km before your arrival station.")
                         .font(.caption)
                         .padding(.leading)
@@ -71,7 +71,8 @@ struct TripPlanCard: View {
                 }
             }
         }
-        
+        .padding(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16))
+        .cornerRadius(12)
     }
 }
 
