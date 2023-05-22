@@ -49,23 +49,25 @@ struct TripPlanCard: View {
                 }
             }
             
-            Divider()
-            
-            HStack(alignment: .center) {
-                Text("You will be alarmed 1km before your arrival station.")
-                    .font(.caption)
-                    .padding(.leading)
-                    .foregroundColor(.gray)
+            if(tripPlan.status != "Search"){
+                Divider()
                 
-                if(tripPlan.ongoing) {
-                    Button(action: alarmState){
-                        Label("Stop Alarm", systemImage: "stop.circle.fill")
-                    }.buttonStyle(.bordered)
+                HStack(alignment: .center) {
+                    Text("You will be alarmed 1km before your arrival station.")
+                        .font(.caption)
+                        .padding(.leading)
+                        .foregroundColor(.gray)
                     
-                } else {
-                    Button(action: alarmState){
-                        Label("Start Alarm", systemImage: "stop.circle.fill")
-                    }.buttonStyle(.borderedProminent)
+                    if(tripPlan.status == "Ongoing") {
+                        Button(action: alarmState){
+                            Label("Stop Alarm", systemImage: "stop.circle.fill")
+                        }.buttonStyle(.bordered)
+                        
+                    } else if (tripPlan.status == "History"){
+                        Button(action: alarmState){
+                            Label("Start Alarm", systemImage: "stop.circle.fill")
+                        }.buttonStyle(.borderedProminent)
+                    }
                 }
             }
         }
@@ -89,6 +91,6 @@ struct TripPlanCard_Previews: PreviewProvider {
                     address: "Jl. St. Serpong No.1, Serpong, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
                     latitude: "-6.319702439276591",
                     longitude: "106.66560221054687"),
-                ongoing: true))
+                status: "Ongoing"))
     }
 }
