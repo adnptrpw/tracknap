@@ -13,6 +13,8 @@
 		B3A98DCA2A1B57900089F3B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3A98DC92A1B57900089F3B6 /* Preview Assets.xcassets */; };
 		B3A98DCC2A1B57900089F3B6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A98DCB2A1B57900089F3B6 /* Persistence.swift */; };
 		B3A98DCF2A1B57900089F3B6 /* tracknap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3A98DCD2A1B57900089F3B6 /* tracknap.xcdatamodeld */; };
+		B3A98DD82A1B59720089F3B6 /* TripPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A98DD72A1B59720089F3B6 /* TripPlan.swift */; };
+		B3A98DDA2A1B59A90089F3B6 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A98DD92A1B59A90089F3B6 /* Station.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B3A98DCB2A1B57900089F3B6 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		B3A98DCE2A1B57900089F3B6 /* tracknap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tracknap.xcdatamodel; sourceTree = "<group>"; };
 		B3A98DD02A1B57900089F3B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3A98DD72A1B59720089F3B6 /* TripPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripPlan.swift; sourceTree = "<group>"; };
+		B3A98DD92A1B59A90089F3B6 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		B3A98DC12A1B578F0089F3B6 /* tracknap */ = {
 			isa = PBXGroup;
 			children = (
+				B3A98DD62A1B59550089F3B6 /* Model */,
 				B3A98DC22A1B578F0089F3B6 /* tracknapApp.swift */,
 				B3A98DC42A1B578F0089F3B6 /* ContentView.swift */,
 				B3A98DC62A1B57900089F3B6 /* Assets.xcassets */,
@@ -73,6 +78,15 @@
 				B3A98DC92A1B57900089F3B6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B3A98DD62A1B59550089F3B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3A98DD72A1B59720089F3B6 /* TripPlan.swift */,
+				B3A98DD92A1B59A90089F3B6 /* Station.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +161,9 @@
 			files = (
 				B3A98DCC2A1B57900089F3B6 /* Persistence.swift in Sources */,
 				B3A98DCF2A1B57900089F3B6 /* tracknap.xcdatamodeld in Sources */,
+				B3A98DD82A1B59720089F3B6 /* TripPlan.swift in Sources */,
 				B3A98DC52A1B578F0089F3B6 /* ContentView.swift in Sources */,
+				B3A98DDA2A1B59A90089F3B6 /* Station.swift in Sources */,
 				B3A98DC32A1B578F0089F3B6 /* tracknapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
