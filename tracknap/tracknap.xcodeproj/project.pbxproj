@@ -15,6 +15,7 @@
 		B3A98DCF2A1B57900089F3B6 /* tracknap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3A98DCD2A1B57900089F3B6 /* tracknap.xcdatamodeld */; };
 		B3A98DD82A1B59720089F3B6 /* TripPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A98DD72A1B59720089F3B6 /* TripPlan.swift */; };
 		B3A98DDA2A1B59A90089F3B6 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A98DD92A1B59A90089F3B6 /* Station.swift */; };
+		B3A98DDD2A1B5B8D0089F3B6 /* TripPlanCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A98DDC2A1B5B8D0089F3B6 /* TripPlanCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B3A98DD02A1B57900089F3B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3A98DD72A1B59720089F3B6 /* TripPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripPlan.swift; sourceTree = "<group>"; };
 		B3A98DD92A1B59A90089F3B6 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		B3A98DDC2A1B5B8D0089F3B6 /* TripPlanCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripPlanCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,8 @@
 		B3A98DC12A1B578F0089F3B6 /* tracknap */ = {
 			isa = PBXGroup;
 			children = (
-				B3A98DD62A1B59550089F3B6 /* Model */,
+				B3A98DDB2A1B5B010089F3B6 /* Components */,
+				B3A98DD62A1B59550089F3B6 /* Models */,
 				B3A98DC22A1B578F0089F3B6 /* tracknapApp.swift */,
 				B3A98DC42A1B578F0089F3B6 /* ContentView.swift */,
 				B3A98DC62A1B57900089F3B6 /* Assets.xcassets */,
@@ -80,13 +83,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B3A98DD62A1B59550089F3B6 /* Model */ = {
+		B3A98DD62A1B59550089F3B6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				B3A98DD72A1B59720089F3B6 /* TripPlan.swift */,
 				B3A98DD92A1B59A90089F3B6 /* Station.swift */,
 			);
-			path = Model;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B3A98DDB2A1B5B010089F3B6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B3A98DDC2A1B5B8D0089F3B6 /* TripPlanCard.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3A98DCC2A1B57900089F3B6 /* Persistence.swift in Sources */,
+				B3A98DDD2A1B5B8D0089F3B6 /* TripPlanCard.swift in Sources */,
 				B3A98DCF2A1B57900089F3B6 /* tracknap.xcdatamodeld in Sources */,
 				B3A98DD82A1B59720089F3B6 /* TripPlan.swift in Sources */,
 				B3A98DC52A1B578F0089F3B6 /* ContentView.swift in Sources */,

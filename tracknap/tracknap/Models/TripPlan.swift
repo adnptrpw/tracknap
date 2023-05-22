@@ -11,5 +11,5 @@ struct TripPlan: Codable, Hashable{
     let id: Int
     let departureStation: Station
     let arrivalStation: Station
-    let status: Bool
+    let ongoing: Bool
 }
