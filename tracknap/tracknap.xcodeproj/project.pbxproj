@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B36A43272A1CAE9E0014AFD0 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36A43262A1CAE9E0014AFD0 /* SearchBar.swift */; };
 		B3A98DC32A1B578F0089F3B6 /* tracknapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A98DC22A1B578F0089F3B6 /* tracknapApp.swift */; };
 		B3A98DC52A1B578F0089F3B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A98DC42A1B578F0089F3B6 /* ContentView.swift */; };
 		B3A98DC72A1B57900089F3B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3A98DC62A1B57900089F3B6 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B36A43262A1CAE9E0014AFD0 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		B3A98DBF2A1B578F0089F3B6 /* tracknap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tracknap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A98DC22A1B578F0089F3B6 /* tracknapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tracknapApp.swift; sourceTree = "<group>"; };
 		B3A98DC42A1B578F0089F3B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				B3A98DDC2A1B5B8D0089F3B6 /* TripPlanCard.swift */,
 				B3A98DDE2A1B6F940089F3B6 /* HomeSheets.swift */,
+				B36A43262A1CAE9E0014AFD0 /* SearchBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				B3A98DDD2A1B5B8D0089F3B6 /* TripPlanCard.swift in Sources */,
 				B3A98DCF2A1B57900089F3B6 /* tracknap.xcdatamodeld in Sources */,
 				B3A98DD82A1B59720089F3B6 /* TripPlan.swift in Sources */,
+				B36A43272A1CAE9E0014AFD0 /* SearchBar.swift in Sources */,
 				B3A98DC52A1B578F0089F3B6 /* ContentView.swift in Sources */,
 				B3A98DDA2A1B59A90089F3B6 /* Station.swift in Sources */,
 				B3A98DC32A1B578F0089F3B6 /* tracknapApp.swift in Sources */,
