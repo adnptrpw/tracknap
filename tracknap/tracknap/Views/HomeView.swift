@@ -22,8 +22,6 @@ struct HomeView: View {
                     .presentationDetents([.medium, .large])
 
             }
-            .interactiveDismissDisabled(true)
-            
         }
 }
 
