@@ -18,8 +18,19 @@ struct HomeView: View {
                     .edgesIgnoringSafeArea(.all)
             }
             .sheet(isPresented: $presentSheet) {
-                Text("Detail")
-                    .presentationDetents([.medium, .large])
+                VStack(alignment: .leading, spacing: 20) {
+                    SearchBar()
+                    
+                    Text("HISTORY")
+                        .font(.footnote)
+                        .fontWeight(.bold)
+                        .foregroundColor(.secondary)
+                }
+                .presentationDetents([.medium, .large])
+                .padding(.horizontal, 16)
+                .padding(.vertical, 32)
+                .frame(maxHeight: .infinity, alignment: .top)
+                
             }
         }
 }

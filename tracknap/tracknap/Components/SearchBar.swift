@@ -18,8 +18,9 @@ struct SearchBar: View {
             
             Text("Search for arrival station & set alarm")
                 .font(.body)
-                .padding(.leading)
+                .padding(.horizontal, 8)
                 .foregroundColor(.gray)
+                .frame(maxWidth: .infinity, alignment: .leading)
         }
         .padding(.horizontal, 8)
         .padding(.vertical, 8)
