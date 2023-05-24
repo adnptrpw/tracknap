@@ -10,6 +10,7 @@ import MapKit
 
 struct HomeView: View {
     @State var presentSheet = true
+    @State private var showModal = false
     @State private var userTrackingMode: MKUserTrackingMode = .follow
 
         var body: some View {
@@ -19,7 +20,15 @@ struct HomeView: View {
             }
             .sheet(isPresented: $presentSheet) {
                 VStack(alignment: .leading, spacing: 20) {
-                    SearchBar()
+                    Button(action: {
+                        showModal.toggle()
+                    }) {
+                        SearchBar()
+                    }
+                    .sheet(isPresented: $showModal) {
+                        Text("HISTORY")
+                    }
+                    
                     
                     Text("HISTORY")
                         .font(.footnote)
