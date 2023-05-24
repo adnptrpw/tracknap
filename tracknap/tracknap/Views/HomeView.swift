@@ -28,7 +28,9 @@ struct HomeView: View {
                         SearchBar()
                     }
                     .sheet(isPresented: $showModal) {
-                        SearchSheet()
+                        NavigationView{
+                            SearchSheet()
+                        }
                     }
                     
                     

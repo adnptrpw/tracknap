@@ -8,11 +8,47 @@
 import SwiftUI
 
 struct SearchSheet: View {
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
-        ZStack{
+        VStack{
             //TODO
-            VStack {
-                Text("HISTORY")
+            Text("HISTORY")
+        }
+        .padding()
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                HStack {
+                    Image(systemName: "chevron.backward")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 12)
+                        .foregroundColor(.blue)
+                    
+                    Text("Home")
+                        .font(.body)
+                        .foregroundColor(.blue)
+                        .onTapGesture {
+                            dismiss()
+                        }
+                }
+            }
+            
+            ToolbarItem(placement: .principal) {
+                Text("Route")
+                    .font(.body)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.black)
+            }
+            
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Text("Cancel")
+                    .font(.body)
+                    .foregroundColor(.blue)
+                    .onTapGesture {
+                        dismiss()
+                    }
             }
         }
         
