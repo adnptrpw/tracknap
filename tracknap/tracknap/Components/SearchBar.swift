@@ -9,23 +9,29 @@ import SwiftUI
 
 struct SearchBar: View {
     var body: some View {
-        HStack(alignment: .center, spacing: 0) {
-            Image(systemName: "mappin.circle.fill")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 17)
-                .foregroundColor(.gray)
+        HStack(alignment: .center){
+            HStack(alignment: .center, spacing: 0) {
+                Image(systemName: "mappin.circle.fill")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 17)
+                    .foregroundColor(.gray)
+                
+                Text("Search for arrival station")
+                    .font(.body)
+                    .padding(.horizontal, 8)
+                    .foregroundColor(.gray)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .padding(.horizontal, 8)
+            .padding(.vertical, 8)
+            .background(Color(.tertiarySystemFill))
+            .cornerRadius(10)
             
-            Text("Search for arrival station & set alarm")
-                .font(.body)
-                .padding(.horizontal, 8)
-                .foregroundColor(.gray)
-                .frame(maxWidth: .infinity, alignment: .leading)
+            Button("Set alarm", action: {})
         }
-        .padding(.horizontal, 8)
-        .padding(.vertical, 8)
-        .background(Color(.tertiarySystemFill))
-        .cornerRadius(10)
+        
+        
         
     }
 }
