@@ -9,6 +9,8 @@ import SwiftUI
 import MapKit
 
 struct HomeView: View {
+    @Environment(\.dismiss) var dismiss
+    
     @State var presentSheet = true
     @State private var showModal = false
     @State private var userTrackingMode: MKUserTrackingMode = .follow
@@ -26,7 +28,7 @@ struct HomeView: View {
                         SearchBar()
                     }
                     .sheet(isPresented: $showModal) {
-                        Text("HISTORY")
+                        SearchSheet()
                     }
                     
                     
