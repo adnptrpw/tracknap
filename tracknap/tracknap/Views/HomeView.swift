@@ -20,7 +20,6 @@ struct HomeView: View {
             .sheet(isPresented: $presentSheet) {
                 Text("Detail")
                     .presentationDetents([.medium, .large])
-
             }
         }
 }
