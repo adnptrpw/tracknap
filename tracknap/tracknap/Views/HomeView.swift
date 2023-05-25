@@ -11,6 +11,8 @@ import MapKit
 struct HomeView: View {
     @Environment(\.dismiss) var dismiss
     
+    @StateObject var mapData = MapViewModel()
+    
     @State var presentSheet = true
     @State private var showModal = false
     @State private var userTrackingMode: MKUserTrackingMode = .follow
@@ -18,7 +20,8 @@ struct HomeView: View {
         var body: some View {
             ZStack {
                 MapView(userTrackingMode: $userTrackingMode)
-                    .edgesIgnoringSafeArea(.all)
+                    .environmentObject(mapData)
+                    .ignoresSafeArea(.all, edges: .all)
             }
             .sheet(isPresented: $presentSheet) {
                 VStack(alignment: .leading, spacing: 20) {

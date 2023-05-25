@@ -18,23 +18,6 @@ struct SearchSheet: View {
         .padding()
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                HStack {
-                    Image(systemName: "chevron.backward")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 12)
-                        .foregroundColor(.blue)
-                    
-                    Text("Home")
-                        .font(.body)
-                        .foregroundColor(.blue)
-                        .onTapGesture {
-                            dismiss()
-                        }
-                }
-            }
-            
             ToolbarItem(placement: .principal) {
                 Text("Route")
                     .font(.body)
