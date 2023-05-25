@@ -12,48 +12,49 @@ struct SearchStation: View {
     @StateObject var mapDataArrival = MapViewModel()
     
     var body: some View {
-        VStack {
-            VStack(alignment: .leading, spacing: 16) {
-                HStack {
-                    Image(systemName: "train.side.front.car")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 28)
-                        .foregroundColor(.blue)
-                    
-                    TextField("Search a destination station", text:$mapDataDestination.searchText)
-                        .font(.body)
-                        .padding(.horizontal, 8)
-                        .multilineTextAlignment(.leading)
-                }
-                .padding(.horizontal, 8)
-                .padding(.vertical, 4)
-                
-                Image(systemName: "ellipsis")
+        VStack(alignment: .leading, spacing: 16) {
+            HStack {
+                Image(systemName: "train.side.front.car")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 12)
-                    .foregroundColor(.gray)
-                    .rotationEffect(.degrees(90))
-                    .padding(.leading, 16)
+                    .frame(width: 28)
+                    .foregroundColor(.blue)
                 
-                HStack {
-                    Image(systemName: "train.side.rear.car")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 28)
-                        .foregroundColor(.red)
-                    
-                    TextField("Search for arrival station", text:$mapDataArrival.searchText)
-                        .font(.body)
-                        .padding(.horizontal, 8)
-                        .multilineTextAlignment(.leading)
-                }
-                .padding(.horizontal, 8)
-                .padding(.vertical, 4)
+                TextField("Search a destination station", text:$mapDataDestination.searchText)
+                    .font(.body)
+                    .padding(.horizontal, 8)
+                    .multilineTextAlignment(.leading)
             }
+            .padding(.horizontal, 8)
+            .padding(.vertical, 4)
             
+            Image(systemName: "ellipsis")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 12)
+                .foregroundColor(.gray)
+                .rotationEffect(.degrees(90))
+                .padding(.leading, 16)
+            
+            HStack {
+                Image(systemName: "train.side.rear.car")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 28)
+                    .foregroundColor(.red)
+                
+                TextField("Search for arrival station", text:$mapDataArrival.searchText)
+                    .font(.body)
+                    .padding(.horizontal, 8)
+                    .multilineTextAlignment(.leading)
+            }
+            .padding(.horizontal, 8)
+            .padding(.vertical, 4)
         }
+        .padding(.horizontal, 8)
+        .padding(.vertical, 8)
+        .background(Color(.tertiarySystemFill))
+        .cornerRadius(12)
     }
 }
 
